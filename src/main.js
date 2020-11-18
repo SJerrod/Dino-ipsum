@@ -12,11 +12,22 @@ function hideWord(word) {
   return answer;
 }
 
+function checkGuess(letter, word) {
+  for (let i=0; i<word.length; i++) {
+    if (word[i] === letter) {
+      // answer[i] = letter;
+      console.log("Yes");
+      return "YES";
+    } else {
+      console.log("No");
+      return "DOESNT CONTAIN THAT LETTER! punk";
+    }
+  }
+}
+
 $(document).ready(function() {
   $('#start').click(function() {
     $('#start').hide();
-    // let letter = $('.guess').val();
-
     let promise= Word.getWord();
 
     promise.then(function(response) {
@@ -28,5 +39,10 @@ $(document).ready(function() {
     }, function(error) {
       $('.guessed').text(`There was an error: ${error}`);
     });
+  });
+  $('#guess').click(function() {
+    let letter = $('.guess').val();
+    checkGuess(letter, word);
+    console.log(checkGuess(letter, word));
   });
 });

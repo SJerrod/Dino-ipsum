@@ -1,0 +1,58 @@
+.head {
+  border: 5px solid black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  left: 93px;
+}
+
+.body {
+  background-color: black;
+  width: 5px;
+  height: 60px;
+  left: 105px;
+  position: absolute;
+  top: 50px;
+}
+
+.armL {
+  background-color: black;
+  width: 30px;
+  height: 5px;
+  position: absolute;
+  top: 65px;
+  left: 80px;
+}
+
+.armR {
+  background-color: black;
+  width: 30px;
+  height: 5px;
+  position: absolute;
+  top: 65px;
+  left: 105px;
+}
+
+.legL {
+  background-color: black;
+  width: 5px;
+  height: 55px;
+  position: absolute;
+  top: 110px;
+  left: 100px;
+}
+
+.legR {
+  background-color: black;
+  width: 5px;
+  height: 55px;
+  position: absolute;
+  top: 110px;
+  left: 110px;
+}
+
+.container {
+  float: right;
+}
